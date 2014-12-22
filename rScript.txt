@@ -1,0 +1,12 @@
+//Import to Datagram
+ dd <- read.table("/Users/alberto.gonzalez/Documents/Alberto/08. PROFILING/csv/june14.csv", header=T, sep=";")
+attach(dd)
+
+//Convertimos en Categórica
+haultypeC <- as.factor(Haultype)
+levels(haultypeC) <- c("DO", "LH", "SH")
+
+//Comprobamos valores de la categorica == entrada
+Haultype == "domestic\n"
+haultypeC == "DO"
+table(haultypeC == "DO")
