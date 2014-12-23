@@ -10,3 +10,6 @@ levels(haultypeC) <- c("DO", "LH", "SH")
 Haultype == "domestic\n"
 haultypeC == "DO"
 table(haultypeC == "DO")
+
+//Consultamos resumen de columnas seleccionando todas las filas en las que duraci—n sea 0
+summary(dd[dd$Duration==0,])
